@@ -30,6 +30,8 @@ The homelab is built around a Proxmox VE host running a mixture of LXC container
 - [Networking](docs/networking.md)
 - [Services](docs/services.md)
 - [Backups](docs/backups.md)
+- [Backup audit](docs/backup-audit.md)
+- [Disaster recovery](docs/disaster-recovery.md)
 - [Website deployment](docs/website-deployment.md)
 - [Operations and recovery](docs/operations.md)
 
