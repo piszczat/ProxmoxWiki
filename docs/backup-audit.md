@@ -22,6 +22,7 @@ Verified live configuration:
 - The most recent scheduled backup run completed successfully.
 - Recent backup archives are visible on the NAS for multiple guests.
 - The NAS currently has roughly 1.8 TB free, which is sufficient for the current retention target and near-term growth.
+- A restore test of a non-critical LXC completed successfully and the restored guest booted correctly.
 - Plex has an external bind mount to the NAS; this mount is not a Proxmox-managed volume and is therefore not included in the guest backup. This is expected because the media itself already resides on the NAS.
 
 The live host should still be checked after major topology changes, but with selection mode set to all, newly added guests are expected to be picked up automatically unless explicitly excluded.
@@ -91,7 +92,7 @@ The following has been verified directly on the Proxmox host:
 - [x] The most recent run completed successfully.
 - [ ] Every guest has at least one recent backup on the NAS.
 - [x] NAS free space is sufficient for current retention growth.
-- [ ] A restore test has been performed for at least one non-critical guest.
+- [x] A restore test has been performed for at least one non-critical guest.
 - [ ] A restore test has been performed for Vaultwarden or Home Assistant using a safe isolated procedure.
 
 ## Recommended restore-test cadence
