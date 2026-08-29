@@ -19,6 +19,7 @@ Verified live configuration:
 - Selection mode: all guests.
 - CT 100-109 are included.
 - VM 200 is included.
+- The most recent scheduled backup run completed successfully.
 - Plex has an external bind mount to the NAS; this mount is not a Proxmox-managed volume and is therefore not included in the guest backup. This is expected because the media itself already resides on the NAS.
 
 The live host should still be checked after major topology changes, but with selection mode set to all, newly added guests are expected to be picked up automatically unless explicitly excluded.
@@ -85,7 +86,7 @@ The following has been verified directly on the Proxmox host:
 - [x] Snapshot mode is enabled.
 - [x] ZSTD compression is enabled.
 - [x] Retention is set to keep the last 7 backups.
-- [ ] The most recent run completed successfully.
+- [x] The most recent run completed successfully.
 - [ ] Every guest has at least one recent backup on the NAS.
 - [ ] NAS free space is sufficient for retention growth.
 - [ ] A restore test has been performed for at least one non-critical guest.
